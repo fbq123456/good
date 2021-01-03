@@ -52,6 +52,7 @@ $(function () {
                     return layer.msg('账号或密码错误')
                 }
                 layer.msg('res.message')
+                localStorage.setItem('token', res.token)
                 location.href = '/index.html'
             }
         })
